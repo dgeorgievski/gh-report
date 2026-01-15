@@ -4,7 +4,7 @@ This is a high-performance F# implementation of the GitHub repository inventory 
 
 ## Why F#?
 
-At the time, this was my only available option which I embraced with a gusto. I love functional programming languages, f# in particular and dotnet core in general.
+At the time, this was my only available option which I embraced with gusto. I love functional programming languages, f# in particular and dotnet core in general.
 
 F# is Microsoft's functional-first language that runs on .NET, making it an **excellent choice for Windows environments**:
 
