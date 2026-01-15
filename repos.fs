@@ -211,12 +211,12 @@ module Utils =
         | null | "" ->
             // Try current directory first, then script directory
             let currentDir = Directory.GetCurrentDirectory()
-            let defaultCert1 = Path.Combine(currentDir, "ssl", "IntactUSCA.pem")
+            let defaultCert1 = Path.Combine(currentDir, "ssl", "CA.pem")
             if File.Exists(defaultCert1) then 
                 Some defaultCert1
             else
                 let scriptDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location)
-                let defaultCert2 = Path.Combine(scriptDir, "ssl", "IntactUSCA.pem")
+                let defaultCert2 = Path.Combine(scriptDir, "ssl", "CA.pem")
                 if File.Exists(defaultCert2) then Some defaultCert2 else None
         | cert -> 
             if File.Exists(cert) then Some cert else None
